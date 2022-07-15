@@ -29,12 +29,14 @@ const RegisterScreen = ({ navigation }) => {
           type="text"
           value={name}
           onChangeText={(text) => setName(text)}
+          style={styles.inputContainer}
         />
         <Input
           placeholder="Email"
           type="email"
           value={email}
           onChangeText={(text) => setEmail(text)}
+          style={styles.inputContainer}
         />
         <Input
           placeholder="Password"
@@ -42,6 +44,7 @@ const RegisterScreen = ({ navigation }) => {
           secureTextEntry
           value={password}
           onChangeText={(text) => setPassword(text)}
+          style={styles.inputContainer}
         />
         <Input
           placeholder="Image url (optional)"
@@ -49,6 +52,7 @@ const RegisterScreen = ({ navigation }) => {
           value={imageUrl}
           onChangeText={(text) => setImageUrl(text)}
           onSubmitEditing={register}
+          style={styles.inputContainer}
         />
       </View>
       <Button
