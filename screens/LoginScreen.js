@@ -7,7 +7,7 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState("");
   const signin = () => {};
   return (
-    <KeyboardAvoidingView behavior="padding" style={styles.container}>
+    <KeyboardAvoidingView style={styles.container}>
       <StatusBar style="light" />
       <Image
         source={{
@@ -21,14 +21,14 @@ const LoginScreen = ({ navigation }) => {
           autoFocus
           type="email"
           value={email}
-          onChange={(text) => setEmail(text)}
+          onChangeText={(text) => setEmail(text)}
         />
         <Input
           placeholder="Password"
           secureTextEntry
           type="password"
           value={password}
-          onChange={(text) => setPassword(text)}
+          onChangeText={(text) => setPassword(text)}
         />
       </View>
       <View>
