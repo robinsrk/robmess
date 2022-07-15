@@ -55,11 +55,7 @@ const RegisterScreen = ({ navigation }) => {
           style={styles.inputContainer}
         />
       </View>
-      <Button
-        onPress={register}
-        title="Register"
-        containerStyle={styles.button}
-      />
+      <Button onPress={register} title="Register" buttonStyle={styles.button} />
       <View style={{ marginBottom: 10 }} />
     </KeyboardAvoidingView>
   );
@@ -77,5 +73,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: 200,
+    backgroundColor: "green",
+    color: "white",
   },
 });
