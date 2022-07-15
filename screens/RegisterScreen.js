@@ -1,12 +1,6 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  KeyboardAvoidingView,
-  Alert,
-} from "react-native";
-import React, { useState } from "react";
-import { Input } from "react-native-elements";
+import { StyleSheet, View, KeyboardAvoidingView, Alert } from "react-native";
+import React, { useLayoutEffect, useState } from "react";
+import { Text, Input, Image, Button } from "react-native-elements";
 
 const RegisterScreen = ({ navigation }) => {
   const [name, setName] = useState("");
