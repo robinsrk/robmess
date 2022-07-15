@@ -51,6 +51,12 @@ const RegisterScreen = ({ navigation }) => {
           onSubmitEditing={register}
         />
       </View>
+      <Button
+        onPress={register}
+        title="Register"
+        containerStyle={styles.button}
+      />
+      <View style={{ marginBottom: 10 }} />
     </KeyboardAvoidingView>
   );
 };
