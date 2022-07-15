@@ -16,6 +16,12 @@ const RegisterScreen = ({ navigation }) => {
       <Text h3 style={{ marginBottom: 50, color: "green" }}>
         Create a RobMess account
       </Text>
+      <Image
+        source={{
+          uri: "https://www.freeiconspng.com/uploads/message-icon-png-20.png",
+        }}
+        style={{ width: 150, height: 150, marginBottom: 20 }}
+      />
       <View style={styles.inputContainer}>
         <Input
           placeholder="Full name"
