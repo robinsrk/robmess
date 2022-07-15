@@ -18,9 +18,9 @@ const RegisterScreen = ({ navigation }) => {
     Alert.alert("Hello");
   };
   return (
-    <KeyboardAvoidingView behavior="padding" style={styles.container}>
-      <Text h1 style={{ marginBottom: 50 }}>
-        RegisterScreen
+    <KeyboardAvoidingView style={styles.container}>
+      <Text h3 style={{ marginBottom: 50, color: "green" }}>
+        Create a RobMess account
       </Text>
       <View style={styles.inputContainer}>
         <Input
