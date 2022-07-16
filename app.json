@@ -2,6 +2,7 @@
   "expo": {
     "name": "robmess",
     "slug": "robmess",
+    "owner": "robinsrk",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +19,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.robmess.chat"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.robmess.chat"
     },
     "web": {
       "favicon": "./assets/favicon.png"
