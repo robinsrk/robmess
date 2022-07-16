@@ -32,12 +32,11 @@ const LoginScreen = ({ navigation }) => {
         />
       </View>
       <View>
-        <Button title="Login" type="solid" containerStyle={styles.button} />
+        <Button title="Login" buttonStyle={styles.button} />
         <Button
           title="Register"
-          type="outline"
           onPress={() => navigation.navigate("Register")}
-          containerStyle={styles.button}
+          containerStyle={{ marginTop: 10 }}
         />
       </View>
       <View style={{ height: 100 }} />
@@ -55,5 +54,5 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   inputContainer: { width: 300 },
-  button: { color: "green", width: 200, marginTop: 10 },
+  button: { backgroundColor: "green", width: 200, marginTop: 10 },
 });
