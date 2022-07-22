@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, KeyboardAvoidingView } from "react-native";
+import { StyleSheet, View, KeyboardAvoidingView } from "react-native";
 import { Button, Input, Image } from "react-native-elements";
 import { StatusBar } from "expo-status-bar";
 const LoginScreen = ({ navigation }) => {
