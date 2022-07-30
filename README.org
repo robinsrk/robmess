@@ -5,6 +5,7 @@
 #+latex_header: \usepackage[margin=1in]{geometry}
 #+options:
 
+\newpage
 * Packages used
 1. React native elements
 2. React native gesture handle
