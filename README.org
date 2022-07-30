@@ -1,0 +1,11 @@
+#+title: Readme
+#+latex_class: article
+#+latex_header: \usepackage{times}
+#+latex_header: \usepackage[hidelinks]{hyperref}
+#+latex_header: \usepackage[margin=1in]{geometry}
+#+options:
+
+* Packages used
+1. React native elements
+2. React native gesture handle
+3. React navigation
