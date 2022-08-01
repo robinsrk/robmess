@@ -1,6 +1,7 @@
 import { StyleSheet, View, KeyboardAvoidingView, Alert } from "react-native";
 import React, { useLayoutEffect, useState } from "react";
 import { Text, Input, Image, Button } from "react-native-elements";
+import { auth } from "../firebase";
 
 const RegisterScreen = ({ navigation }) => {
   const [name, setName] = useState("");
@@ -8,11 +9,24 @@ const RegisterScreen = ({ navigation }) => {
   const [password, setPassword] = useState("");
   const [imageUrl, setImageUrl] = useState("");
 
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerBackTitle: "Back to login",
+    });
+  }, [navigation]);
+
   const register = () => {
-    Alert.alert("Hello");
+    auth.createUserWithEmailAndPassword(email, password).then((authUser) => {
+      authUser.user.updateProfile({
+        displayName: name,
+        photoURL:
+          imageUrl ||
+          "https://cdn4.iconfinder.com/data/icons/political-elections/50/48-512.png",
+      });
+    });
   };
   return (
-    <KeyboardAvoidingView style={styles.container}>
+    <KeyboardAvoidingView behavior="position" style={styles.container}>
       <Text h3 style={{ marginBottom: 50, color: "green" }}>
         Create a RobMess account
       </Text>
